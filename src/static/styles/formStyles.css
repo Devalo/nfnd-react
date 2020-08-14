@@ -1,0 +1,46 @@
+body {
+  background: #002F60;
+}
+
+.form {
+  background-color: #fff;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.form-header {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #222
+}
+
+.form input {
+  border-radius: 0;
+}
+
+.form-container {
+  background-color: #fff;
+}
+
+.main-form {
+  position: relative;
+}
+
+.form-container .form-control {
+  border: 0;
+  color: #444444;
+  background: transparent;
+  border-radius: 0;
+  padding: 7px 0;
+  box-shadow: 0 0 0 ;
+  border-bottom: 1px solid #999999;
+}
+.form-container .form-control::-webkit-input-placeholder {
+  color: #666666
+}
+
+.errors {
+  color: red;
+}
