@@ -44,8 +44,12 @@ const InfoForm = () => {
         e.target.reset();
       })
       .catch((err) => {
-        const errorMsg = err.response.data.error;
-        setNotification([`Noe gikk galt: ${errorMsg}`, 'danger']);
+        if (err.response !== undefined) {
+          const errorMsg = err.response.data.error;
+          setNotification([`Noe gikk galt: ${errorMsg}`, 'danger']);
+        } else {
+          setNotification(['Noe gikk galt: Ingen kontakt med serveren', 'danger']);
+        }
         setTimeout(() => { setNotification([]); }, 2000);
       });
   };
